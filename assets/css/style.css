@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    padding-right:20px;
+    color: white;
+
+}
+
+nav {
+  background-color: rgba(20, 54, 66, 0);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.background-img {
+    background-image: url("../img/coffee-header.png");
+    height: 500px;
+    background-color:rgba(15, 139, 141, 0.6);
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+}
+main section {
+    display: flex;
+    flex-direction: row;
+}
+main section div img {
+    width:500px;
+    height: 460px;
+    border-radius: 20px;
+
+}
