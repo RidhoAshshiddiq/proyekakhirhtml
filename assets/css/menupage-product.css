@@ -1,0 +1,75 @@
+.product h1{
+    padding-top:150px;
+    text-align: center;
+    height: 58px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+    
+}
+
+.product h2 {
+    padding-top:45px;
+    text-align: center;
+    font-weight: normal;
+    height: 29px;
+    font-size: 25px;
+    color: rgba(20, 54, 66, 1);
+}
+
+
+/* CSS untuk image-grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom, atur sesuai dengan kebutuhan Anda */
+    gap: 10px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+  
+  /* CSS untuk grid-item */
+  .grid-item {
+    position: relative; 
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    padding:10px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  /* CSS untuk gambar latar belakang dan teks overlay */
+  .gambar-background img {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .teks-overlay {
+    position: absolute;
+    width:100%;
+    top: 20%; /* Menempatkan teks di tengah vertikal */
+    left: 90%; /* Menempatkan teks di tengah horizontal */
+    transform: translate(-50%, -50%); /* Untuk menggeser teks agar benar-benar berada di tengah */
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    /* background-color: rgba(0, 0, 0, 0.7); Atur warna latar belakang overlay */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* CSS untuk gambar depan */
+  .gambar-foreground {
+    position: absolute;
+    top:30%;
+    left:20%;
+    width: 60%; /* Atur ukuran gambar depan agar sesuai dengan grid */
+    height: auto;
+    border-radius: 10px;
+    z-index:1;
+    
+  }

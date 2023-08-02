@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+header nav div {
+    width: 335px;
+    height: 67px;
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    padding-right: 20px;
+    color: white;
+
+}
+
+nav {
+    background-color: rgba(20, 54, 66, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 150px;
+    padding-left: 150px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.background-img {
+    background-image: url("../img/coffee-header.png");
+    height: 800px;
+    background-color: rgba(15, 139, 141, 0.6);
+    background-blend-mode: multiply;
+    position: relative;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-img h1 {
+    color: rgba(249, 251, 254, 1);
+    font-size: 70px;
+    line-height: 84px;
+    text-align: center;
+    height: 80px;
+    padding-top: 300px;
+    white-space: pre-line;
+}
+
+.background-img h2 {
+    color: rgba(249, 251, 254, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43.2px;
+    text-align: center;
+    height: 40px;
+    padding-top: 200px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.whoarewe {
+    display: flex;
+    flex-direction: row;
+}
+
+.whoarewe img {
+    width: 365px;
+    height: 460px;
+    border-radius: 20px;
+
+}
+
+.whoarewe h3 {
+    height: 58px;
+    padding-left: 150px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.garis-1 {
+    border-top: 5px solid rgba(236, 154, 41, 1);
+    ;
+    /* Atur ketebalan, warna, dan gaya garis */
+    /* Atau menggunakan properti border sebagai shorthand */
+    /* border: 1px solid black; */
+    /* border-width: 1px;
+       border-style: solid;
+       border-color: black; */
+    width: 280px;
+    margin-left: 150px;
+}
+
+.whoarewe p {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.product-showcase {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 70px;
+}
+
+.product-showcase img {
+    width: 335px;
+    height: 335px;
+    border-radius: 20px;
+}
+
+.product-showcase h3 {
+    height: 58px;
+    padding-right: 200px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.garis-2 {
+    border-top: 5px solid rgba(236, 154, 41, 1);
+    ;
+    /* Atur ketebalan, warna, dan gaya garis */
+    /* Atau menggunakan properti border sebagai shorthand */
+    /* border: 1px solid black; */
+    /* border-width: 1px;
+       border-style: solid;
+       border-color: black; */
+    width: 370px;
+    margin-right: 150px;
+}
+
+.product-showcase p {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 200px;
+    padding-top: 20px;
+}
+
+.shape-1 {
+    width: 335px;
+    height: 70px;
+    background-color: rgba(168, 32, 26, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-decoration: none;
+    /* Hilangkan dekorasi tautan (underline) */
+    position: absolute;
+    margin-top: 200px;
+    margin-right: 590px;
+
+}
+
+.hangout-with-us {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.hangout-with-us img {
+    width: 400px;
+    height: 430px;
+    border-radius: 20px;
+
+}
+
+.hangout-with-us h3 {
+    height: 58px;
+    padding-left: 150px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.garis-3 {
+    border-top: 5px solid rgba(236, 154, 41, 1);
+    ;
+    /* Atur ketebalan, warna, dan gaya garis */
+    /* Atau menggunakan properti border sebagai shorthand */
+    /* border: 1px solid black; */
+    /* border-width: 1px;
+       border-style: solid;
+       border-color: black; */
+    width: 360px;
+    margin-left: 150px;
+}
+
+.hangout-with-us p {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.shape-2 {
+    width: 335px;
+    height: 70px;
+    background-color: rgba(168, 32, 26, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-decoration: none;
+    /* Hilangkan dekorasi tautan (underline) */
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -370px;
+
+}
+
+
+.find-us {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.find-us h3 {
+    height: 58px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.find-us span {
+    height: 58px;
+    font-size: 48px;
+    color: rgba(236, 154, 41, 1);
+    border-bottom: 3px solid rgba(236, 154, 41, 1);
+    padding-bottom: 5px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Membuat 3 kolom dengan lebar yang sama */
+    gap: 20px;
+    /* Jarak antar gambar */
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Untuk memusatkan gambar dalam halaman */
+}
+
+.grid-item {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    /* Agar gambar tidak melebihi kotaknya */
+    display: block;
+    /* Agar gambar tidak membuat jarak tambahan di bawahnya */
+    border-radius: 5px;
+    /* Agar gambar memiliki sudut yang lebih halus */
+}
+
+
+.contact {
+    text-align: center;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.contact h3 {
+    height: 58px;
+    font-size: 48px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.contact p {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.shape-3 {
+    width: 335px;
+    height: 70px;
+    background-color: rgba(168, 32, 26, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-decoration: none;
+    /* Hilangkan dekorasi tautan (underline) */
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 250px;
+
+}
+
+footer {
+    background-color: rgba(20, 54, 66, 1);
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    padding-top: 50px;
+    margin-top: 200px;
+
+    border-radius: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+footer div div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    color: white;
+}
+
+footer div ul li {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+footer div ul li div {
+    padding-bottom: 10px;
+}
+
+footer div ul li ul {
+    flex-direction: column;
+}
+
+footer div ul li div a {
+    text-decoration: none;
+    color: rgba(236, 154, 41, 1);
+}
+
+
+.logo-footer {
+    color: white;
+    width: 420px;
+    height: 67px;
+}
+
+
+footer div div div {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 150px;
+    gap: 20px;
+}
+
+footer div div div img {
+    filter: brightness(0) invert();
+    height: 40px;
+    width: 32px;
+}
