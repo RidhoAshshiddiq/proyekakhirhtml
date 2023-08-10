@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/img/favicon3.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Project Akhir</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="menupage-product.html">Product</a></li>
-                <li><a href="store-findus.html">Store</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="menu">
+                <li id="menu-product" class="menu-item" onClick="pilihMenu(1)"><a
+                        href="menupage-product.html">Product</a></li>
+                <li id="menu-store" class="menu-item" onClick="pilihMenu(2)"><a href="store-findus.html">Store</a></li>
+                <li id="menu-contact" class="menu-item terpilih" onClick="pilihMenu(3)"><a
+                        href="contact.html">Contact</a></li>
             </ul>
             <div>
                 <a href="index.html"><img src="assets/img/logo.png" alt="logo aroma bumi"></a>
@@ -31,7 +33,7 @@
         <h2>Best qualities from our local soil</h2>
     </div>
     <main>
-        <section class="whoarewe">
+        <section class="whoarewe slide-in" data-direction="left">
             <div>
                 <img id="target" src="assets/img/who-are-we.jpg">
             </div>
@@ -46,7 +48,7 @@
             </div>
         </section>
 
-        <section class="product-showcase">
+        <section class="product-showcase slide-in" data-direction="right">
             <div>
                 <img id="target" src="assets/img/our-products.jpg">
             </div>
@@ -62,7 +64,7 @@
             </div>
         </section>
 
-        <section class="hangout-with-us">
+        <section class="hangout-with-us slide-in" data-direction="left">
             <div>
                 <img id="target" src="assets/img/hang-out-with-us.jpg">
             </div>
@@ -112,49 +114,45 @@
         </section>
     </main>
     <footer>
-        <div>
-            <ul>
-                <li>
-                    <div>
-                        <a href="menupage-product.html">Product</a>
-                    </div>
-                    <ul>
-                        <li>Coffe Based</li>
-                        <li>Non-Coffe</li>
-                        <li>Tea Based</li>
+        <div class="footer-content">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <span class="accordion-title">Product<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=coffee">Coffee Based</a></li>
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=non-coffee">Non-Coffee</a>
+                        </li>
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=tea">Tea Based</a></li>
                     </ul>
-                </li>
-
-                <li>
-                    <div>
-                        <a href="store-findus.html">Store</a>
-                    </div>
-                    <ul>
-                        <li>Location</li>
-                    </ul>
-                </li>
-
-                <li>
-                    <div>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                    <ul>
-                        <li>Customer Service</li>
-                    </ul>
-                </li>
-            </ul>
-            <div>
-                <div>
-                    <a href="index.html"><img class="logo-footer" src="assets/img/logo.png" alt="logo aroma bumi"></a>
                 </div>
-                <div>
-                    <a href="contact.html"><img src="assets/img/mail-icon.svg" alt="logo pesan"></a>
-                    <a href="contact.html"><img src="assets/img/phone-icon.svg" alt="logo telfon"></a>
+
+                <div class="accordion-item">
+                    <span class="accordion-title">Store<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/store-findus.html">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="accordion-item">
+                    <span class="accordion-title">Contact<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/contact.html">Customer Service</a></li>
+                    </ul>
                 </div>
             </div>
 
+            <div class="footer-logo">
+                <a href="index.html"><img class="logo-home" src="assets/img/logo.png" alt="logo aroma bumi"></a>
+                <div>
+                    <a href="contact.html"><img class="logo-menu" src="assets/img/mail-icon.svg" alt="logo pesan"></a>
+                    <a href="contact.html"><img class="logo-menu" src="assets/img/phone-icon.svg" alt="logo telfon"></a>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="assets/script1.js"></script>
+    <script src="assets/script2.js"></script>
+    <script src="assets/script6.js"></script>
 </body>
 
 </html>
