@@ -46,6 +46,26 @@ nav a {
     color: white;
 }
 
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative;
+    transition: border-bottom-color 0s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid orange;
+}
+
+
+
+
+
 .background-img {
     background-image: url("../img/coffee-header.png");
     height: 800px;
@@ -84,6 +104,7 @@ main {
     flex-direction: column;
     padding-top: 100px;
     align-items: center;
+    overflow: hidden;
 }
 
 .whoarewe {
@@ -330,15 +351,16 @@ main {
 
 }
 
+/* Existing CSS for the footer */
 footer {
     background-color: rgba(20, 54, 66, 1);
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
-    padding-top: 50px;
+    padding: 50px; 
     margin-top: 200px;
-
     border-radius: 10px;
+    position: relative;
 }
 
 footer div {
@@ -353,49 +375,117 @@ footer div div {
     flex-direction: column;
 }
 
-footer div ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    row-gap: 15px;
-    color: white;
+.footer-logo {
+    margin-right: 910px;
+
 }
 
-footer div ul li {
-    display: inline-block;
-    margin-right: 80px;
-}
-
-footer div ul li div {
-    padding-bottom: 10px;
-}
-
-footer div ul li ul {
-    flex-direction: column;
-}
-
-footer div ul li div a {
-    text-decoration: none;
-    color: rgba(236, 154, 41, 1);
-}
-
-
-.logo-footer {
+.logo-home {
     color: white;
     width: 420px;
     height: 67px;
+
 }
 
-
-footer div div div {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 150px;
-    gap: 20px;
-}
-
-footer div div div img {
+.logo-menu {
     filter: brightness(0) invert();
     height: 40px;
     width: 32px;
+
+}
+
+div.footer-logo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.accordion {
+    width: 40%;
+    /* Adjust the width as needed */
+    position: absolute;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+    /* Adjust spacing between accordion items */
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(236, 154, 41, 1);
+    /* border-bottom: 1px solid rgba(236, 154, 41, 1); */
+    font-weight: bold;
+    cursor: pointer;
+    /* Add pointer cursor to indicate it's clickable */
+}
+
+.accordion-content {
+    display: none;
+    list-style: none;
+}
+
+.accordion-content li {
+    margin-top: 3px;
+}
+
+.accordion-content li a {
+    text-decoration: none;
+    color: white;
+}
+
+.accordion-item ul {
+    display: none;
+}
+
+
+.accordion-item.active .accordion-content {
+    display: block;
+    row-gap: 5px;
+    color: white;
+    margin-top: 5px;
+}
+
+.accordion-title i {
+    margin-right: 110px;
+    /* Atur jarak antara ikon dan teks */
+    top: 2px;
+    /* Atur posisi vertikal jika diperlukan */
+}
+
+
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(1300px);
+    /* Start position before the slide-in effect */
+    transition: opacity 1s, transform 1s;
+}
+
+.slide-in[data-direction="left"] {
+    transform: translateX(-1300px);
+}
+
+.slide-in[data-direction="right"] {
+    transform: translateX(1300px);
+}
+
+/* Tambahkan class "slide-in-left" dan "slide-in-right" pada slide-in */
+.slide-in-left {
+    transform: translateX(1300px);
+}
+
+.slide-in-right {
+    transform: translateX(1300px);
+}
+
+/* Tambahkan class "active" untuk mengaktifkan animasi */
+.slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
 }
