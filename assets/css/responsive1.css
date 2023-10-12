@@ -1,0 +1,359 @@
+/* Existing styles */
+
+/* Untuk Ukuran Layar 600px atau Kurang (Smartphone) */
+@media screen and (max-width: 600px) {
+
+  /* responsive header */
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .header-logo {
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    column-gap: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .background-img h1 {
+    font-size: 40px;
+    padding-top: 220px;
+  }
+
+  .background-img h2 {
+    font-size: 18px;
+    padding-top: 100px;
+  }
+
+  /* responsive header */
+
+  /* Responsive main section konten */
+  @media screen and (max-width: 600px) {
+
+    .whoarewe,
+    .product-showcase,
+    .hangout-with-us {
+      flex-direction: column;
+      align-items: flex-start;
+      /* Align items to the left */
+      text-align: left;
+      /* Align text to the left */
+    }
+
+    .whoarewe img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin-left: 10px;
+    }
+
+    .product-showcase img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 0;
+      /* Remove auto margin */
+    }
+
+    .hangout-with-us img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin-right: 23px;
+      margin-top: 70px;
+    }
+
+    .whoarewe h3,
+    .whoarewe p {
+      font-size: 20px;
+      padding: 5px 0;
+      margin-bottom: -40px;
+      margin-left: 10px;
+    }
+
+    .product-showcase h3,
+    .hangout-with-us h3,
+    .product-showcase p,
+    .hangout-with-us p {
+      font-size: 20px;
+      padding: 5px 0;
+      margin-bottom: -40px;
+    }
+
+
+    .garis-1 {
+      width: 35%;
+      margin: 5px 0;
+      margin-left: 10px;
+    }
+
+    .garis-2 {
+      width: 50%;
+      margin: 5px 0;
+    }
+
+    .garis-3 {
+      width: 53%;
+      margin: 5px 0;
+    }
+
+    .shape-1,
+    .shape-2 {
+      font-size: 14px;
+      padding: 5px 0;
+      margin-top: 50px;
+      width: 50%;
+      height: 30px;
+    }
+
+    .shape-2 {
+      left: auto;
+      /* Hapus posisi kiri */
+      right: 165px;
+      /* Sesuaikan posisi kanan */
+    }
+  }
+
+  /* Responsive main section konten */
+
+  /* Responsive Find Us Section */
+  .find-us h3 {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+
+  .find-us h3 span {
+    font-size: 30px;
+  }
+
+  .image-grid {
+    gap: 10px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 40px;
+  }
+
+  /* Responsive Find Us Section */
+
+
+  /* Responsive Contact Section */
+  .contact h3 {
+    margin-top: -20px;
+  }
+
+  .contact h3 {
+    font-size: 30px;
+  }
+
+  .contact p {
+    font-size: 20px;
+    margin-top: -20px;
+
+  }
+
+  .shape-3 {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-top: 50px;
+    width: 50%;
+    height: 30px;
+    left: auto;
+    right: 100px;
+    margin-top: 20px;
+
+  }
+
+  /* Responsive Contact Section */
+
+  /* Responisve  footer */
+  footer {
+    padding: 20px;
+    margin-top: 100px;
+    padding-bottom: 200px;
+  }
+
+
+  .footer-logo {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+
+  .logo-home {
+    width: 200px;
+  }
+
+  .accordion {
+    width: 80%;
+    padding-top: 120px;
+  }
+
+  .accordion-title {
+    margin-left: -40px;
+  }
+
+  .accordion-title i {
+    margin-right: -10px;
+  }
+}
+
+/* Responisve  footer */
+
+/* Untuk Ukuran Layar 601px hingga 1024px (Tablet) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* Update the navigation padding */
+  nav {
+    padding: 0 40px;
+  }
+
+  /* Update the background image text */
+  .background-img h1 {
+    font-size: 60px;
+    padding-top: 250px;
+  }
+
+  .background-img h2 {
+    font-size: 24px;
+    padding-top: 180px;
+  }
+
+  /* Update the padding for sections */
+  .whoarewe,
+  .product-showcase,
+  .hangout-with-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .product-showcase{
+    z-index: 2;
+  }
+  .whoarewe img,
+  .product-showcase img,
+  .hangout-with-us img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .hangout-with-us img{
+    margin-top:60px;
+  }
+
+  .whoarewe h3,
+  .product-showcase h3,
+  .hangout-with-us h3 {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  .whoarewe p,
+  .product-showcase p,
+  .hangout-with-us p {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .garis-1,
+  .garis-2,
+  .garis-3 {
+    width: 80%;
+    margin: 10px 0;
+    margin-top:-30px;
+    margin-left:30px;
+  }
+  .shape-1,
+  .shape-2 {
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .shape-1{
+    left: 0;
+    right: auto;
+    margin-top: 20px;
+  }
+
+  .shape-2 {
+    left: auto;
+    right: 0;
+    margin-top: 20px;
+  }
+
+
+  .shape-3{
+    font-size: 18px;
+    margin-left:220px;
+  } 
+
+
+  .find-us h3 {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+
+  .find-us h3 span {
+    font-size: 30px;
+  }
+  /* Update the image grid spacing */
+  .image-grid {
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  /* Update the footer padding */
+  footer {
+    padding: 50px;
+    margin-top: 190px;
+  }
+
+  .footer-logo{
+    margin-right:300px;
+  }
+
+  /* Update the footer accordion width */
+  .accordion {
+    width: 40%;
+    padding-top:10px;
+  }
+
+  /* Update the accordion title spacing */
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+  }
+  .accordion-title i {
+    margin-left: 10px;
+  }
+  .accordion-item.active .accordion-content {
+    display: block;
+    row-gap: 5px;
+    color: white;
+    margin-top: 5px;
+    margin-left:150px;
+}
+
+}

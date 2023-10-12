@@ -1,0 +1,90 @@
+.find-us-tagline {
+    padding-left:150px;
+}
+
+.find-us-tagline h1 {
+    height: 58px;
+    font-size: 48px;
+    padding-top:100px;
+    color: rgba(15, 139, 141, 1);
+}
+
+.tempat-1 {
+    margin-top:30px;
+    margin-left:150px;
+    margin-right: 1000px;
+    padding-top:20px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius:20px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display:block;
+}
+.tempat-1 h1 {
+    color: rgba(20, 54, 66, 1);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.tempat-1 p {
+    padding-top:10px;
+}
+
+.tempat-2 {
+    margin-top:30px;
+    margin-left:150px;
+    margin-right: 1000px;
+    padding-top:20px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius:20px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display:block;
+}
+.tempat-2 h1 {
+    color: rgba(20, 54, 66, 1);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.tempat-2 p {
+    padding-top:10px;
+}
+
+.tempat-3 {
+    margin-top:30px;
+    margin-left:150px;
+    margin-right: 1000px;
+    padding-top:20px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius:20px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display:block;
+}
+.tempat-3 h1 {
+    color: rgba(20, 54, 66, 1);
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.tempat-3 p {
+    padding-top:10px;
+}
+
+.maps {
+    border-radius: 30px;
+    margin-left:700px;
+    margin-top:-600px;
+}
+
+.maps img {
+    width:600px;
+    height:600px;
+}

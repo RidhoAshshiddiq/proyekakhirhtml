@@ -1,0 +1,169 @@
+/* Adjust main content to make space for the sidebar */
+main {
+  margin-left: 320px; /* Sesuaikan dengan lebar sidebar */
+  padding: 20px;
+  min-height: 810px; /* Sesuaikan dengan tinggi header */
+}
+
+/* Styling for the sidebar */
+.sidebar {
+  position: absolute;
+  top: 260px; /* Sesuaikan dengan posisi header */
+  left: 80px; /* Sesuaikan dengan posisi product section */
+  width: 250px;
+  height: 75%;
+  background-color: transparent;
+  padding: 20px;
+  border : 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+
+.sidebar h2 {
+  margin-top: 0;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px;
+}
+
+.sidebar h2 a {
+  color: rgba(15, 139, 141, 1);
+  text-decoration:none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-top: 3px;
+  padding-left: 40px;
+  border-left: 7px solid orange;
+  margin-left:22px;
+  margin-top:20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 30px;
+  transition: transform 0s ease-in-out; /* Efek transisi untuk animasi zoom-in */
+  font-weight: normal;
+}
+
+/* Efek zoom-in saat cursor diarahkan */
+.sidebar ul li:hover {
+  transform: scale(1.1); /* Scale item menjadi 110% saat cursor diarahkan */
+  font-weight: bold;
+}
+
+/* Efek zoom-in saat item ditekan (klik) */
+.sidebar ul li:active {
+  transform: scale(0.9); /* Scale item menjadi 90% saat item ditekan */
+  font-weight: bold;
+}
+
+.sidebar ul li a {
+  color: rgba(20, 54, 66, 1);
+  text-decoration: none;
+}
+
+/* Adjust main content to make space for the sidebar */
+main {
+  margin-left: 260px; /* Adjust this value to match the width of your sidebar */
+  padding: 20px;
+}
+
+
+
+.product h1 {
+  padding-top: 150px;
+  text-align: center;
+  height: 58px;
+  font-size: 48px;
+  color: rgba(15, 139, 141, 1);
+
+}
+
+.product h2 {
+  padding-top: 45px;
+  text-align: center;
+  font-weight: normal;
+  height: 29px;
+  font-size: 25px;
+  color: rgba(20, 54, 66, 1);
+}
+
+
+/* CSS untuk image-grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 kolom, atur sesuai dengan kebutuhan Anda */
+  gap: 10px;
+  margin-top: 30px;
+  /* Tambahkan transisi untuk skala (scale) */
+  /* transition: transform 0.3s ease; */
+}
+
+
+/* CSS untuk grid-item */
+.grid-item {
+  position: relative;
+  width:60%;
+  transition: transform 0.3s ease-in-out; /* Efek transisi untuk animasi zoom-in */
+  padding-top:20px;
+  margin-left: 150px;
+}
+
+/* Efek zoom-in saat cursor diarahkan */
+.grid-item:hover {
+  transform: scale(1.1); /* Scale grid-item menjadi 110% saat cursor diarahkan */
+}
+
+/* Efek pertukaran posisi saat cursor diarahkan */
+.grid-item:hover .gambar-foreground {
+  top: 5%; /* Geser gambar ke atas saat cursor diarahkan */
+}
+
+.grid-item:hover .teks-overlay {
+  top: 70%; /* Geser teks ke bawah saat cursor diarahkan */
+}
+
+/* CSS untuk gambar latar belakang dan teks overlay */
+.gambar-background img {
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+  height: 200px;
+}
+
+/* CSS untuk teks overlay */
+/* CSS untuk teks overlay */
+.teks-overlay {
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  /* Geser teks ke atas dari tengah elemen */
+  left: -12%;
+  /* Geser teks ke kiri dari bagian kiri elemen */
+  text-align: center;
+  /* Pusatkan teks secara horizontal */
+  color: white;
+  font-size: 18px;
+  /* Sesuaikan ukuran font sesuai keinginan */
+  font-weight: bold;
+  /* Sesuaikan style font sesuai keinginan */
+  padding: 10px;
+  border-radius: 5px;
+  /* background-color: rgba(0, 0, 0, 0.7); Atur warna latar belakang overlay */
+}
+
+/* CSS untuk gambar depan */
+.gambar-foreground {
+  position: absolute;
+  top: 30%;
+  /* Geser gambar ke tengah elemen */
+  left: 5%;
+  /* Geser gambar ke tengah elemen */
+  width: 70%;
+  /* Atur ukuran gambar depan agar sesuai dengan grid */
+  height: auto;
+  border-radius: 10px;
+  z-index: 1;
+}

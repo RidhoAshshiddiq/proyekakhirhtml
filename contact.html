@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon3.png" type="image/x-icon">
+    
+    <title>Proyek Akhir</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li id="menu-product" class="menu-item" onClick="pilihMenu(1)"><a
+                        href="menupage-product.html">Product</a></li>
+                <li id="menu-store" class="menu-item" onClick="pilihMenu(2)"><a href="store-findus.html">Store</a></li>
+                <li id="menu-contact" class="menu-item terpilih" onClick="pilihMenu(3)"><a
+                        href="contact.html">Contact</a></li>
+            </ul>
+            <div>
+                <a href="index.html"><img src="assets/img/logo.png" alt="logo aroma bumi"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="judul">
+            <div>
+                <h1>How can we help?</h1>
+            </div>
+        </section>
+
+        <section class="kontak">
+            <div>
+                <form>
+                    <div class="kontak-form">
+                        <label for="name">Name</label>
+                        <input placeholder="Name" type"text" id="nama" name="name" required>
+                    </div>
+
+
+                    <div class="kontak-form">
+                        <label for="email">Email</label>
+                        <input placeholder="Email" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="kontak-form">
+                        <label for="phone-number">Phone Number</label>
+                        <input placeholder="Phone Number " type="text" id="phone-number" name="phone-number" required>
+                    </div>
+
+                    <div class="kontak-form">
+                        <label for="subject">Subject</label>
+                        <input placeholder="Subject " type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="kontak-form">
+                        <label for="message">Message</label>
+                        <textarea id="pesan" name="pesan" required></textarea>
+                    </div>
+                    <input class="kontak-submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <span class="accordion-title">Product<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=coffee">Coffee Based</a></li>
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=non-coffee">Non-Coffee</a>
+                        </li>
+                        <li><a href="http://127.0.0.1:5500/menupage-product.html?category=tea">Tea Based</a></li>
+                    </ul>
+                </div>
+
+                <div class="accordion-item">
+                    <span class="accordion-title">Store<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/store-findus.html">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="accordion-item">
+                    <span class="accordion-title">Contact<i class="fas fa-chevron-left"></i></span>
+                    <ul class="accordion-content">
+                        <li><a href="http://127.0.0.1:5500/contact.html">Customer Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-logo">
+                <a href="index.html"><img class="logo-home" src="assets/img/logo.png" alt="logo aroma bumi"></a>
+                <div>
+                    <a href="contact.html"><img class="logo-menu" src="assets/img/mail-icon.svg" alt="logo pesan"></a>
+                    <a href="contact.html"><img class="logo-menu" src="assets/img/phone-icon.svg" alt="logo telfon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script1.js"></script>
+    <script src="assets/js/script6.js"></script>
+</body>

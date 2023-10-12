@@ -1,0 +1,64 @@
+/* Media Query untuk perangkat dengan lebar maksimal 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        display: block; /* Mengembalikan tampilan normal */
+        padding: 10px;
+    }
+
+    .sidebar {
+        display: none; /* Menyembunyikan sidebar */
+    }
+    
+    .product h1 {
+        padding-top:40px;
+        font-size: 30px;
+        margin-left:-40px;
+        white-space: nowrap; /* Membuat teks tetap dalam satu baris */
+    }
+
+    .product h2 {
+        padding-top:5px;
+        font-size:20px;
+        margin-left:-50px;
+        white-space: nowrap;
+    }
+    .product {
+        width: 20%;
+        padding: 10px;
+        text-align: center;
+        margin-left:-400px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        padding-top:100px;
+        margin-left: auto; /* Membuat konten produk berada di tengah */
+        margin-right: auto; /* Membuat konten produk berada di tengah */
+        
+    }
+
+    .gambar-background img {
+        position: relative;
+        width: 70%;
+        border-radius: 10px;
+        height: 100px;
+        margin-right:150px;
+      }
+
+    .gambar-foreground {
+        top: 10%;
+        left: 25%;
+        width: 30%;
+        z-index: 1;
+    }
+
+    .teks-overlay {
+        top: 70%;
+        left: 0;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 0;
+    }
+}
