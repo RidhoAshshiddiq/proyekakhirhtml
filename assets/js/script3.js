@@ -14,13 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
           interval = setInterval(() => {
             let logoTop = parseFloat(logo.style.top) || 30;
             let teksTop = parseFloat(teksOverlay.style.top) || 10;
-
             if (logoTop > 5) logoTop -= 1;
             if (teksTop < 70) teksTop += 1;
-
             logo.style.top = logoTop + "%";
             teksOverlay.style.top = teksTop + "%";
-
             if (logoTop <= 5 && teksTop >= 70) {
               clearInterval(interval);
             }
@@ -35,13 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
           interval = setInterval(() => {
             let logoTop = parseFloat(logo.style.top) || 5;
             let teksTop = parseFloat(teksOverlay.style.top) || 70;
-
             if (logoTop < 30) logoTop += 1;
             if (teksTop > 10) teksTop -= 1;
-
             logo.style.top = logoTop + "%";
             teksOverlay.style.top = teksTop + "%";
-
             if (logoTop >= 30 && teksTop <= 10) {
               clearInterval(interval);
             }
