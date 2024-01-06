@@ -1,4 +1,3 @@
-// script4.js
 window.onload = function() {
     // Mendapatkan alamat URL halaman saat ini
     var currentURL = window.location.href;
