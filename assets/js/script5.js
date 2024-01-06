@@ -38,3 +38,4 @@ sidebarItems.forEach(item => {
         showProductsByCategory(target);
     });
 });
+
