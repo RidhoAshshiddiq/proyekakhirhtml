@@ -1,5 +1,4 @@
 const slideIns = document.querySelectorAll(".slide-in");
-
 function checkSlide() {
   slideIns.forEach(slideIn => {
     const slideInAt = (window.scrollY + window.innerHeight) - slideIn.clientHeight / 2;
@@ -15,7 +14,6 @@ function checkSlide() {
     }
   });
 }
-
 window.addEventListener("scroll", checkSlide);
 window.addEventListener("resize", checkSlide);
 checkSlide();
