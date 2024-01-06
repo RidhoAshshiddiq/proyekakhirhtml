@@ -1,7 +1,6 @@
 // Ambil nilai query parameter 'category' dari URL
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get('category');
-
 // Fungsi untuk menampilkan produk berdasarkan kategori
 function showProductsByCategory(category) {
     // Dapatkan semua elemen produk yang ada
@@ -19,7 +18,6 @@ function showProductsByCategory(category) {
         }
     });
 }
-
 // Panggil fungsi pertama kali saat halaman dimuat
 showProductsByCategory(category);
 
