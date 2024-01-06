@@ -6,7 +6,6 @@ let nameFile = window.location.pathname;
 let menuItems = document.querySelectorAll(".menu-item a");
 menuItems.forEach((item, index) => {
     let link = item.href;
-
     console.log(link.substring(21));
     if (link.substring(21) === nameFile) {
         item.classList.add("terpilih");
@@ -19,7 +18,6 @@ menuItems.forEach((item, index) => {
 
 function pilihMenu(nomorMenu) {
     let menuItems = document.querySelectorAll(".menu-item");
-
     console.log(menuItems);
     menuItems.forEach((item, index) => {
         if (index === nomorMenu - 1) {
