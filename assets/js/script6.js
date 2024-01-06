@@ -5,7 +5,6 @@ accordionItems.forEach(item => {
 
     accordionTitle.addEventListener('click', () => {
         item.classList.toggle('active');
-
         // Menutup semua accordion kecuali yang sedang diklik
         accordionItems.forEach(otherItem => {
             if (otherItem !== item) {
